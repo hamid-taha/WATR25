@@ -66,8 +66,7 @@ nav {
 }
 
 .nav-list li a:hover {
-  font-weight: bold;
-  background-color: transparent; /* Ensures no background change */
+  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.8);
 }
 
 
@@ -170,8 +169,7 @@ footer {
   }
 
 .nav-list li a:hover {
-  font-weight: bold;
-  background-color: transparent; /* Ensures no background change */
+  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.8);
 }
 
 
