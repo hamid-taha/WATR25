@@ -74,7 +74,7 @@ p {
   background-color: #0099CC; /* Blue */
   border: 2px solid #FF6600; /* Orange border */
   color: #FFFFFF; /* White text */
-  transform: scale(1.05); /* Slight increase in size */
+  transform: scale(1.0);
 }
 
 /* Footer */
