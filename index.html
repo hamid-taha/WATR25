@@ -1,125 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WATR 2025</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            scroll-behavior: smooth;
-        }
-        header {
-            background: #333;
-            color: white;
-            padding: 15px 20px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 1000;
-        }
-        .logo {
-            font-size: 20px;
-            font-weight: bold;
-        }
-        .hamburger {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 24px;
-            cursor: pointer;
-            display: none;
-        }
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-        .nav-links li a {
-            color: white;
-            text-decoration: none;
-        }
-        .section {
-            padding: 100px 20px;
-            margin-top: 60px;
-        }
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                left: 0;
-                width: 100%;
-                background: #444;
-                padding: 10px;
-            }
-            .nav-links.show {
-                display: flex;
-            }
-            .hamburger {
-                display: block;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WATR 2025</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">WATR 2025</div>
-            <button class="hamburger">&#9776;</button>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#scope">Scope</a></li>
-                <li><a href="#schedule">Schedule</a></li>
-                <li><a href="#registration">Registration</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="home" class="section">
-        <h1>Welcome to WATR 2025</h1>
-        <p>Advancing telecommunications research with AI, Quantum Computing, and Next-Gen Connectivity.</p>
-    </section>
+  <!-- Hero Section -->
+  <section id="hero" class="parallax">
+    <div class="hero-content">
+      <h1>Workshop on Advances in Telecommunications Research (WATR)</h1>
+      <p>June 14-16, 2025 | Queen’s University, Kingston, Ontario</p>
+      <a href="#registration" class="cta-button">Register Now</a>
+    </div>
+  </section>
 
-    <section id="scope" class="section">
-        <h2>Scope</h2>
-        <p>Join us as we explore interdisciplinary innovations shaping the future of telecommunications.</p>
-    </section>
+  <!-- Scope Section -->
+  <section id="scope" class="content-section">
+    <div class="container">
+      <h2>Scope</h2>
+      <p>Join us at WATR 2025, where leading researchers, industry experts, and practitioners will explore groundbreaking advancements in telecommunications. This workshop provides a dynamic platform for exchanging ideas, fostering collaborations, and shaping the future of telecommunications networks. This year’s theme focuses on interdisciplinary innovations shaping the next generation of telecommunications. Key discussions will explore how AI, quantum computing, and other emerging technologies are transforming the field.</p>
+    </div>
+  </section>
 
-    <section id="schedule" class="section">
-        <h2>Schedule</h2>
-        <p>June 14-16, 2025 | Queen’s University, Kingston, Ontario</p>
-        <ul>
-            <li>Day 1: AI and Reasoning in the Network</li>
-            <li>Day 2: Quantum Communications and Computing</li>
-            <li>Day 3: Innovations in Sensing and Connectivity</li>
-        </ul>
-    </section>
+  <!-- Workshop Format Section -->
+  <section id="format" class="content-section">
+    <div class="container">
+      <h2>Workshop Format</h2>
+      <p>WATR 2025 will follow a structured daily module format, ensuring a balanced mix of presentations, discussions, and actionable insights. Each day will center around a specific theme.</p>
+      <h3>Day 1: AI and Reasoning in the Network</h3>
+      <p>Exploring the role of artificial intelligence in autonomous decision-making, network optimization, and reasoning frameworks in telecommunications.</p>
+      <h3>Day 2: Quantum Communications and Computing</h3>
+      <p>Investigating the intersection of quantum technologies with telecommunications, including quantum key distribution, quantum networking, and the impact of quantum computing on secure and high-performance communication systems.</p>
+      <h3>Day 3: Innovations in Sensing and Connectivity</h3>
+      <p>Exploring advancements in sensing, connectivity, and infrastructure, including joint sensing-communication systems, heterogeneous networks, emerging architectures, and new service models.</p>
+    </div>
+  </section>
 
-    <section id="registration" class="section">
-        <h2>Registration</h2>
-        <p>General: $200 | Students: $100</p>
-    </section>
+  <!-- Registration Section -->
+  <section id="registration" class="content-section">
+    <div class="container">
+      <h2>Registration</h2>
+      <p>Registration for WATR 2025 is recommended for general attendees and required for students. The registration fee is $200, with a discounted rate of $100 for students. Further details on the registration process will be provided soon.</p>
+      <a href="#" class="cta-button">Register Now</a>
+    </div>
+  </section>
 
-    <section id="contact" class="section">
-        <h2>Contact</h2>
-        <p>For inquiries, email us at contact@watr2025.org</p>
-    </section>
+  <!-- Footer -->
+  <footer>
+    <p>We look forward to welcoming you to Kingston this June!</p>
+  </footer>
 
-    <script>
-        document.querySelector(".hamburger").addEventListener("click", function() {
-            document.querySelector(".nav-links").classList.toggle("show");
-        });
-    </script>
+  <!-- Optional JavaScript for Smooth Scrolling -->
+  <script src="script.js"></script>
 </body>
 </html>
