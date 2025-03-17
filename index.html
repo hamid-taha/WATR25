@@ -40,4 +40,86 @@
         }
         .nav-links {
             list-style: none;
-            display
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+        }
+        .section {
+            padding: 100px 20px;
+            margin-top: 60px;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                background: #444;
+                padding: 10px;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .hamburger {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">WATR 2025</div>
+            <button class="hamburger">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#scope">Scope</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#registration">Registration</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home" class="section">
+        <h1>Welcome to WATR 2025</h1>
+        <p>Advancing telecommunications research with AI, Quantum Computing, and Next-Gen Connectivity.</p>
+    </section>
+
+    <section id="scope" class="section">
+        <h2>Scope</h2>
+        <p>Join us as we explore interdisciplinary innovations shaping the future of telecommunications.</p>
+    </section>
+
+    <section id="schedule" class="section">
+        <h2>Schedule</h2>
+        <p>June 14-16, 2025 | Queen’s University, Kingston, Ontario</p>
+        <ul>
+            <li>Day 1: AI and Reasoning in the Network</li>
+            <li>Day 2: Quantum Communications and Computing</li>
+            <li>Day 3: Innovations in Sensing and Connectivity</li>
+        </ul>
+    </section>
+
+    <section id="registration" class="section">
+        <h2>Registration</h2>
+        <p>General: $200 | Students: $100</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>For inquiries, email us at contact@watr2025.org</p>
+    </section>
+
+    <script>
+        document.querySelector(".hamburger").addEventListener("click", function() {
+            document.querySelector(".nav-links").classList.toggle("show");
+        });
+    </script>
+</body>
+</html>
