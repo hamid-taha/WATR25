@@ -136,13 +136,13 @@ p {
 
 /* Footer */
 footer {
-  position: relative; /* Change from fixed */
+  position: fixed;
+  bottom: 0;
   width: 100%;
   background-color: #003366;
   color: #FFFFFF;
   text-align: center;
-  padding: 20px;
-  margin-top: 40px; /* Creates spacing */
+  padding: 10px;
 }
 
 /* Responsive */
