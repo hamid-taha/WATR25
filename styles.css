@@ -1,14 +1,10 @@
 /* General Styles */
-html, body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   color: #333333;
   line-height: 1.6;
-  scroll-behavior: smooth;
 }
 
 h1, h2, h3 {
@@ -50,23 +46,12 @@ nav {
   margin: 4px 0;
 }
 
-/* Navigation List with Smooth Transition */
 .nav-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   justify-content: center;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-20px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.nav-list.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
 }
 
 .nav-list li {
@@ -98,7 +83,6 @@ nav {
 /* Main Content Section */
 .content-section {
   padding: 60px 20px;
-  flex: 1; /* Pushes footer down if content is short */
 }
 
 .container {
@@ -134,7 +118,6 @@ p {
   margin-bottom: 20px;
 }
 
-/* CTA Button */
 .cta-button {
   background-color: #FF6600;
   color: #FFFFFF;
@@ -153,13 +136,13 @@ p {
 
 /* Footer */
 footer {
-  position: relative; /* Ensures footer appears at the bottom */
+  position: fixed;
+  bottom: 0;
   width: 100%;
   background-color: #003366;
   color: #FFFFFF;
   text-align: center;
   padding: 20px;
-  margin-top: 50px; /* Adds space before footer */
 }
 
 /* Responsive */
@@ -184,21 +167,12 @@ footer {
     border-top: 1px solid #575757;
   }
 
-  .nav-list li a:hover {
-    text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.9);
-  }
+.nav-list li a:hover {
+  text-shadow: 0px 0px 2px rgba(255, 255, 255, 0.9);
+}
+
 
   .nav-list.active {
     display: flex;
-  }
-
-  /* Adjust Text Sizes on Mobile */
-  h1 {
-    font-size: 2rem;
-  }
-
-  .cta-button {
-    font-size: 1rem;
-    padding: 8px 16px;
   }
 }
