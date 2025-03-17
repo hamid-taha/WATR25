@@ -66,7 +66,7 @@ nav {
 }
 
 .nav-list li a:hover {
-  background-color: #575757;
+  font-weight: bold;
 }
 
 /* Hero Section */
@@ -167,9 +167,9 @@ footer {
     border-top: 1px solid #575757;
   }
 
-  .nav-list li a:hover {
-    background-color: #575757;
-  }
+.nav-list li a:hover {
+  font-weight: bold;
+}
 
   .nav-list.active {
     display: flex;
