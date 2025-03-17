@@ -20,29 +20,43 @@ a:hover {
   color: #0099CC;
 }
 
-/* Parallax Sections */
-.parallax {
-  background-image: url('images/hero-bg.jpg'); /* Add your background image */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #FFFFFF;
+/* Main Content Section */
+.content-section {
+  padding: 60px 20px;
+  background-color: #F5F5F5;
 }
 
-.hero-content h1 {
-  font-size: 3rem;
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #0099CC;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
-.hero-content p {
+h3 {
   font-size: 1.5rem;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
 }
 
 .cta-button {
@@ -52,21 +66,12 @@ a:hover {
   border-radius: 5px;
   font-size: 1.2rem;
   transition: background-color 0.3s ease;
+  display: inline-block;
+  margin-top: 20px;
 }
 
 .cta-button:hover {
   background-color: #0099CC;
-}
-
-/* Content Sections */
-.content-section {
-  padding: 60px 20px;
-  background-color: #F5F5F5;
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
 }
 
 /* Footer */
