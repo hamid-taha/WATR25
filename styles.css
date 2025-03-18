@@ -94,6 +94,14 @@ nav {
   overflow-x: hidden; /* Ensures no horizontal scroll */
 }
 
+.content-section {
+  width: 100%;
+  margin-top: 60px; /* Matches nav height to prevent overlap */
+  padding: 20px; /* Keeps clean spacing without excessive padding */
+  flex-grow: 1;
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 800px;
   margin: 0 auto;
