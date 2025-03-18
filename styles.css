@@ -88,13 +88,6 @@ nav {
 
 /* Main Content Section */
 .content-section {
-  width: 100%; /* Ensures no overflow */
-  padding: 80px 20px; /* Increased padding to prevent nav overlap */
-  flex-grow: 1; /* Pushes footer down when content is short */
-  overflow-x: hidden; /* Ensures no horizontal scroll */
-}
-
-.content-section {
   width: 100%;
   margin-top: 60px; /* Matches nav height to prevent overlap */
   padding: 20px; /* Keeps clean spacing without excessive padding */
