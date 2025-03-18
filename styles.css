@@ -95,6 +95,7 @@ nav {
     padding: 0; /* Remove all padding from .content-section */
     flex-grow: 1;
     overflow-x: hidden;
+    scroll-margin-top: 70px; 
 }
 
 .container {
