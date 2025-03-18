@@ -90,15 +90,17 @@ nav {
 .content-section {
   width: 100%;
   margin-top: 60px; /* Matches nav height to prevent overlap */
-  padding: 20px; /* Keeps clean spacing without excessive padding */
+  padding: 20px 0; /* Adjusted padding: keeps vertical spacing minimal */
   flex-grow: 1;
   overflow-x: hidden;
 }
 
+
+
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 0 20px; /* Prevents overflow while maintaining spacing */
+  padding: 0 20px; /* Ensures text isn't too wide */
   box-sizing: border-box;
 }
 
@@ -115,8 +117,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  margin: 0 0 20px; /* Only keep bottom margin */
 }
 
 h3 {
